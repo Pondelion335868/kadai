@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>名前:</strong>
+  <%= @fund.name %>
+</p>
+
+<p>
+  <strong>4月:</strong>
+  <%= @fund.apr14 %>
+</p>
+
+<p>
+  <strong>5月:</strong>
+  <%= @fund.may14 %>
+</p>
+
+<p>
+  <strong>6月:</strong>
+  <%= @fund.jun14 %>
+</p>
+
+<p>
+  <strong>7月:</strong>
+  <%= @fund.jul14 %>
+</p>
+
+<p>
+  <strong>8月:</strong>
+  <%= @fund.aug14 %>
+</p>
+
+<p>
+  <strong>9月:</strong>
+  <%= @fund.sep14 %>
+</p>
+
+<p>
+  <strong>10月:</strong>
+  <%= @fund.oct14 %>
+</p>
+
+<p>
+  <strong>11月:</strong>
+  <%= @fund.nov14 %>
+</p>
+
+<p>
+  <strong>12月:</strong>
+  <%= @fund.dec14 %>
+</p>
+
+<p>
+  <strong>1月:</strong>
+  <%= @fund.jan15 %>
+</p>
+
+<p>
+  <strong>2月:</strong>
+  <%= @fund.feb15 %>
+</p>
+
+<p>
+  <strong>3月:</strong>
+  <%= @fund.mar15 %>
+</p>
+
+<%= link_to '編集', edit_fund_path(@fund) %> |
+<%= link_to '戻る', funds_path %>

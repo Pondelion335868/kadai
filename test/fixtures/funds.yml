@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  apr14: 2014-05-09
+  may14: 2014-05-09
+  jun14: 2014-05-09
+  jul14: 2014-05-09
+  aug14: 2014-05-09
+  sep14: 2014-05-09
+  oct14: 2014-05-09
+  nov14: 2014-05-09
+  dec14: 2014-05-09
+  jan15: 2014-05-09
+  feb15: 2014-05-09
+  mar15: 2014-05-09
+
+two:
+  name: MyString
+  apr14: 2014-05-09
+  may14: 2014-05-09
+  jun14: 2014-05-09
+  jul14: 2014-05-09
+  aug14: 2014-05-09
+  sep14: 2014-05-09
+  oct14: 2014-05-09
+  nov14: 2014-05-09
+  dec14: 2014-05-09
+  jan15: 2014-05-09
+  feb15: 2014-05-09
+  mar15: 2014-05-09
