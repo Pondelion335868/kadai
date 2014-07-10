@@ -1,9 +1,7 @@
-<%= @user.username %>さま
+会計係の中島です。
 
-この度は、本サイトへユーザ登録をいただきましてありがとうございました。
-以下は、登録いただいたユーザ情報です。
+<%= @user.name %>さんから，先月分の研究室費がまだ支払われておりません。
+500円を中島まで、よろしくお願いいたします。
 
-ユーザ名：<%= @user.username %>
-パスワード：＊＊＊
-メールアドレス：<%= @user.email %>
-
+関西大学　アルゴリズム工学研究室
+<%= url_for(:host => 'www.al.kansai-u.ac.jp/index.html', :controller => 'funds', :action => 'index') %>

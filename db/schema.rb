@@ -11,22 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140509070051) do
+ActiveRecord::Schema.define(version: 20140703093114) do
 
   create_table "funds", force: true do |t|
     t.string   "name"
-    t.date     "apr14"
-    t.date     "may14"
-    t.date     "jun14"
-    t.date     "jul14"
-    t.date     "aug14"
-    t.date     "sep14"
-    t.date     "oct14"
-    t.date     "nov14"
-    t.date     "dec14"
-    t.date     "jan15"
-    t.date     "feb15"
-    t.date     "mar15"
+    t.date     "apr"
+    t.date     "may"
+    t.date     "jun"
+    t.date     "jul"
+    t.date     "aug"
+    t.date     "sep"
+    t.date     "oct"
+    t.date     "nov"
+    t.date     "dec"
+    t.date     "jan"
+    t.date     "feb"
+    t.date     "mar"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

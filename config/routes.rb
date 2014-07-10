@@ -1,7 +1,20 @@
 Accounting::Application.routes.draw do
+
+  get 'users/new'
+
+  resources :users
+
   resources :funds
 
-	get ':controller(/:action(/:id(.:format)))'
+  resources :login
+
+  get 'extra/sendmail' => 'extra#sendmail'
+
+  get 'extra/sendmail_all' => 'extra#sendmail_all'
+
+  root to: 'funds#index'
+
+	get ':controller(/:action(/:id))(.:format)'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

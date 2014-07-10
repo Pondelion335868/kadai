@@ -12,6 +12,7 @@ class FundsController < ApplicationController
   # GET /funds/1
   # GET /funds/1.json
   def show
+    @fund = Fund.find(params[:id])
   end
 
   # GET /funds/new
@@ -21,6 +22,7 @@ class FundsController < ApplicationController
 
   # GET /funds/1/edit
   def edit
+    @fund = Fund.find(params[:id])
   end
 
   # POST /funds
@@ -64,6 +66,20 @@ class FundsController < ApplicationController
   end
 
   private
+  def check_logined
+    if session[:usr] then
+      begin
+        @usr = User.find(session[:usr])
+      rescue ActiveRecord::RecordNotFound
+        reset_session
+      end
+    end
+    unless @usr
+      flash[:referer] = request.fullpath
+      redirect_to :controller => 'login', :action => 'index' 
+    end
+  end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_fund
       @fund = Fund.find(params[:id])
@@ -71,6 +87,6 @@ class FundsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fund_params
-      params.require(:fund).permit(:name, :apr14, :may14, :jun14, :jul14, :aug14, :sep14, :oct14, :nov14, :dec14, :jan15, :feb15, :mar15)
+      params.require(:fund).permit(:id, :name, :email, :apr, :may, :jun, :jul, :aug, :sep, :oct, :nov, :dec, :jan, :feb, :mar)
     end
 end

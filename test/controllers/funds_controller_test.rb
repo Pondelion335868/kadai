@@ -18,7 +18,7 @@ class FundsControllerTest < ActionController::TestCase
 
   test "should create fund" do
     assert_difference('Fund.count') do
-      post :create, fund: { apr14: @fund.apr14, aug14: @fund.aug14, dec14: @fund.dec14, feb15: @fund.feb15, jan15: @fund.jan15, jul14: @fund.jul14, jun14: @fund.jun14, mar15: @fund.mar15, may14: @fund.may14, name: @fund.name, nov14: @fund.nov14, oct14: @fund.oct14, sep14: @fund.sep14 }
+      post :create, fund: { apr: @fund.apr, aug: @fund.aug, dec: @fund.dec, feb: @fund.feb, jan: @fund.jan, jul: @fund.jul, jun: @fund.jun, mar: @fund.mar, may: @fund.may, name: @fund.name, nov: @fund.nov, oct: @fund.oct, sep: @fund.sep }
     end
 
     assert_redirected_to fund_path(assigns(:fund))
@@ -35,7 +35,7 @@ class FundsControllerTest < ActionController::TestCase
   end
 
   test "should update fund" do
-    patch :update, id: @fund, fund: { apr14: @fund.apr14, aug14: @fund.aug14, dec14: @fund.dec14, feb15: @fund.feb15, jan15: @fund.jan15, jul14: @fund.jul14, jun14: @fund.jun14, mar15: @fund.mar15, may14: @fund.may14, name: @fund.name, nov14: @fund.nov14, oct14: @fund.oct14, sep14: @fund.sep14 }
+    patch :update, id: @fund, fund: { apr: @fund.apr, aug: @fund.aug, dec: @fund.dec, feb: @fund.feb, jan: @fund.jan, jul: @fund.jul, jun: @fund.jun, mar: @fund.mar, may: @fund.may, name: @fund.name, nov: @fund.nov, oct: @fund.oct, sep: @fund.sep }
     assert_redirected_to fund_path(assigns(:fund))
   end
 

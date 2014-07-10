@@ -4,66 +4,91 @@
   <strong>名前:</strong>
   <%= @fund.name %>
 </p>
+<hr>
 
-<p>
-  <strong>4月:</strong>
-  <%= @fund.apr14 %>
-</p>
+<ul>
 
-<p>
-  <strong>5月:</strong>
-  <%= @fund.may14 %>
-</p>
+<!--
+  <p>
+    <strong>これまでの研究室費は以下の通り，確かに徴収いたしました.</strong>
+  </p>
+-->
 
-<p>
-  <strong>6月:</strong>
-  <%= @fund.jun14 %>
-</p>
+  <li>
+    <p>
+      <strong>4月分:</strong>
+      <%= @fund.apr %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>5月分:</strong>
+      <%= @fund.may %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>6月分:</strong>
+      <%= @fund.jun %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>7月分:</strong>
+      <%= @fund.jul %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>8月分:</strong>
+      <%= @fund.aug %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>9月分:</strong>
+      <%= @fund.sep %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>10月分:</strong>
+      <%= @fund.oct %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>11月分:</strong>
+      <%= @fund.nov %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>12月分:</strong>
+      <%= @fund.dec %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>1月分:</strong>
+      <%= @fund.jan %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>2月分:</strong>
+      <%= @fund.feb %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>3月分:</strong>
+      <%= @fund.mar %>
+    </p>
+  </li>
+</ul>
 
-<p>
-  <strong>7月:</strong>
-  <%= @fund.jul14 %>
-</p>
-
-<p>
-  <strong>8月:</strong>
-  <%= @fund.aug14 %>
-</p>
-
-<p>
-  <strong>9月:</strong>
-  <%= @fund.sep14 %>
-</p>
-
-<p>
-  <strong>10月:</strong>
-  <%= @fund.oct14 %>
-</p>
-
-<p>
-  <strong>11月:</strong>
-  <%= @fund.nov14 %>
-</p>
-
-<p>
-  <strong>12月:</strong>
-  <%= @fund.dec14 %>
-</p>
-
-<p>
-  <strong>1月:</strong>
-  <%= @fund.jan15 %>
-</p>
-
-<p>
-  <strong>2月:</strong>
-  <%= @fund.feb15 %>
-</p>
-
-<p>
-  <strong>3月:</strong>
-  <%= @fund.mar15 %>
-</p>
+<hr>
 
 <%= link_to '編集', edit_fund_path(@fund) %> |
 <%= link_to '戻る', funds_path %>
